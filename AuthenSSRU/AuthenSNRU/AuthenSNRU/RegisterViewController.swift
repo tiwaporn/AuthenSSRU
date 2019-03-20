@@ -16,11 +16,15 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     } //Main Method
     
-
+    @IBAction func cloudButton(_ sender: UIBarButtonItem) {
+    }
+    
+    
+    
     @IBAction func BeckButton(_ sender: UIBarButtonItem) {
         
         print("You Click Back")
-        performSegue(withIdentifier: "BackMain", sender: self)
+        performSegue(withIdentifier: "BackMain", sender: self  )
         
     }
     
