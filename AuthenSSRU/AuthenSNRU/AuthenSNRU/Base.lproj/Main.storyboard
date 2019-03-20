@@ -123,12 +123,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="15"/>
+            <point key="canvasLocation" x="-1262" y="15"/>
         </scene>
         <!--Regisger-->
         <scene sceneID="5Zf-oR-azP">
             <objects>
-                <viewController title="Regisger" id="GpP-w3-T13" sceneMemberID="viewController">
+                <viewController title="Regisger" id="GpP-w3-T13" customClass="RegisterViewController" customModule="AuthenSNRU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VvG-oa-0Bc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,11 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Register" id="haf-lD-NsL">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="Mi1-Zy-w7U"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="Mi1-Zy-w7U">
+                                            <connections>
+                                                <action selector="BeckButton:" destination="GpP-w3-T13" id="did-zq-IUQ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -148,10 +152,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IWi-Gt-gJX"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="jJE-kp-YLM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd6-Oc-hJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="15"/>
+            <point key="canvasLocation" x="-530" y="15"/>
         </scene>
     </scenes>
     <resources>
