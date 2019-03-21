@@ -32,10 +32,12 @@ class RegisterViewController: UIViewController {
         print("You Cick Upload")
         
         let name = NameTextField.text!
-        
+        let user = UserTextField.text!
+        let password = PassWordTextField.text!
         
         print("name =\(name)")
-        
+        print("user=\(user)")
+        print("password\(password)")
         
     }
     
