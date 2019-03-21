@@ -63,6 +63,14 @@ class RegisterViewController: UIViewController {
         
     } //myAlert
     
+    func uploadData(name:String,user:String,password:String) -> Void {
+        let urlString = "https://www.androidthai.in.th/snru/addDatamuk.php?isAdd=true&Name=\(name)&User=\(user)&Password=\(password)"
+        
+        
+        
+    }
+    
+    
     @IBAction func BeckButton(_ sender: UIBarButtonItem) {
         
         print("You Click Back")
