@@ -137,40 +137,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="f3D-sv-jJL">
+                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="f3D-sv-jJL">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52Q-OD-4kS">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52Q-OD-4kS">
                                 <rect key="frame" x="97" y="113" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="HAO-UB-ttf"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sc-zP-3Yz">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sc-zP-3Yz">
                                 <rect key="frame" x="97" y="151" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="H2p-3Y-9nB"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-00-qxl">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-00-qxl">
                                 <rect key="frame" x="97" y="189" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="T48-Qd-iXu"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQv-RI-Ra6">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQv-RI-Ra6">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -182,7 +178,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="Cloud up" id="fYY-dL-oAf">
                                             <connections>
-                                                <action selector="CloudButton:" destination="GpP-w3-T13" id="WV7-aB-AgZ"/>
+                                                <action selector="uploadButton:" destination="GpP-w3-T13" id="hRQ-ak-CKs"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -190,21 +186,6 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="zQv-RI-Ra6" firstAttribute="trailing" secondItem="IWi-Gt-gJX" secondAttribute="trailing" id="0JL-6Q-atl"/>
-                            <constraint firstItem="f3D-sv-jJL" firstAttribute="top" secondItem="IWi-Gt-gJX" secondAttribute="top" id="Lbg-Ks-kgB"/>
-                            <constraint firstItem="zQv-RI-Ra6" firstAttribute="top" secondItem="IWi-Gt-gJX" secondAttribute="top" id="NTo-Ne-C7j"/>
-                            <constraint firstItem="5sc-zP-3Yz" firstAttribute="top" secondItem="52Q-OD-4kS" secondAttribute="bottom" constant="8" id="RzM-OH-JiZ"/>
-                            <constraint firstItem="LMa-00-qxl" firstAttribute="centerX" secondItem="VvG-oa-0Bc" secondAttribute="centerX" id="VXs-yC-hhX"/>
-                            <constraint firstItem="f3D-sv-jJL" firstAttribute="bottom" secondItem="IWi-Gt-gJX" secondAttribute="bottom" id="XLf-TW-Zix"/>
-                            <constraint firstItem="LMa-00-qxl" firstAttribute="top" secondItem="5sc-zP-3Yz" secondAttribute="bottom" constant="8" id="Xj6-e3-XLH"/>
-                            <constraint firstItem="5sc-zP-3Yz" firstAttribute="centerX" secondItem="VvG-oa-0Bc" secondAttribute="centerX" id="evY-pC-f1g"/>
-                            <constraint firstItem="f3D-sv-jJL" firstAttribute="trailing" secondItem="IWi-Gt-gJX" secondAttribute="trailing" id="kcE-G8-GQo"/>
-                            <constraint firstItem="f3D-sv-jJL" firstAttribute="leading" secondItem="IWi-Gt-gJX" secondAttribute="leading" id="lrQ-MZ-6wP"/>
-                            <constraint firstItem="52Q-OD-4kS" firstAttribute="centerX" secondItem="VvG-oa-0Bc" secondAttribute="centerX" id="mod-G4-Z6r"/>
-                            <constraint firstItem="52Q-OD-4kS" firstAttribute="top" secondItem="zQv-RI-Ra6" secondAttribute="bottom" constant="25" id="q3g-hx-61I"/>
-                            <constraint firstItem="zQv-RI-Ra6" firstAttribute="leading" secondItem="IWi-Gt-gJX" secondAttribute="leading" id="q66-Lo-MVF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IWi-Gt-gJX"/>
                     </view>
                     <toolbarItems/>

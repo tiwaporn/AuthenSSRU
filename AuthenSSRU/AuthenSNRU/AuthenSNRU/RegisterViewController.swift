@@ -16,10 +16,12 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     } //Main Method
     
-    @IBAction func cloudButton(_ sender: UIBarButtonItem) {
+    
+    
+    @IBAction func uploadButton(_ sender: UIBarButtonItem) {
+        print("You Cick Upload")
+        
     }
-    
-    
     
     @IBAction func BeckButton(_ sender: UIBarButtonItem) {
         
