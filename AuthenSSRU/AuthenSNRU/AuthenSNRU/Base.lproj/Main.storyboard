@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1262.3188405797102" y="14.732142857142856"/>
+            <point key="canvasLocation" x="-1732" y="15"/>
         </scene>
         <!--Regisger-->
         <scene sceneID="5Zf-oR-azP">
@@ -191,12 +191,15 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="NameTextField" destination="52Q-OD-4kS" id="ZsX-hu-HJt"/>
+                        <outlet property="PassWordTextField" destination="LMa-00-qxl" id="kSL-nA-U53"/>
+                        <outlet property="UserTextField" destination="5sc-zP-3Yz" id="PHC-rk-sb0"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="jJE-kp-YLM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd6-Oc-hJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-530.43478260869574" y="14.732142857142856"/>
+            <point key="canvasLocation" x="-1003" y="15"/>
         </scene>
     </scenes>
     <resources>
